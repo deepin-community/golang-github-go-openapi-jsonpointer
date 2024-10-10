@@ -1,5 +1,101 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-go-openapi-jsonpointer (1:0.21.0-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release.
+  * Wrap and sort -sat.
+  * Switch to Standards-Version 4.7.0 (no changes needed).
+  * Add myself to Uploaders.
+  * Update copyright years.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Guillem Jover <gjover@sipwise.com>  Tue, 17 Sep 2024 19:57:34 +0200
+
+golang-github-go-openapi-jsonpointer (1:0.20.2-1) unstable; urgency=medium
+
+  * New upstream version 0.20.2
+  * Bump versioned dependencies as per go.mod
+
+ -- Anthony Fok <foka@debian.org>  Wed, 21 Feb 2024 09:58:23 -0700
+
+golang-github-go-openapi-jsonpointer (1:0.19.6-1) unstable; urgency=medium
+
+  * New upstream version 0.19.6
+  * Reorder fields in debian/control and debian/copyright
+  * Update versioned dependencies as per go.mod,
+    removing golang-github-mailru-easyjson-dev as {build-,}dependency,
+    and removing golang-github-stretchr-testify-dev from -dev dependency
+  * Bump Standards-Version to 4.6.2 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Wed, 11 Oct 2023 18:57:14 -0600
+
+golang-github-go-openapi-jsonpointer (1:0.19.5-4) unstable; urgency=medium
+
+  [ Guillem Jover ]
+  * Update debian/watch file
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster (oldstable)
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Thu, 24 Nov 2022 22:26:31 +0000
+
+golang-github-go-openapi-jsonpointer (1:0.19.5-3) unstable; urgency=medium
+
+  * Team upload.
+  * Add Repository and Repository-Browse fields to upstream metadata.
+  * Use dh-sequence-golang instead of dh-golang and --with=golang.
+  * Remove ${shlibs:Depends} from Depends field.
+  * Move license file location on Debian systems to a Comment field.
+  * Wrap and sort -at.
+  * Update gitlab.ci.yml from its canonical source.
+  * Set Rules-Requires-Root to no.
+  * Update gbp configuration following Go Team new workflow.
+  * Update gitlab-ci.yml from its new refactored template.
+  * Mark golang-github-stretchr-testify-dev dependency as <!nocheck>.
+  * Update copyright claims.
+  * Set build directory to _build.
+  * Add debian/.gitignore file.
+  * Fix debian/watch syntax.
+
+ -- Guillem Jover <gjover@sipwise.com>  Tue, 30 Nov 2021 15:26:00 +0100
+
+golang-github-go-openapi-jsonpointer (1:0.19.5-2) unstable; urgency=medium
+
+  * Add missing epoch to version of golang-github-go-openapi-swag-dev
+  * Mark library package with "Multi-Arch: foreign"
+  * Bump Standards-Version to 4.6.0 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Tue, 19 Oct 2021 07:22:48 -0600
+
+golang-github-go-openapi-jsonpointer (1:0.19.5-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Anthony Fok ]
+  * New upstream version 0.19.5
+  * Add debian/watch
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+  * debian/control:
+    + Apply "cme fix dpkg" fixes:
+      - Organize debian/control fields
+      - Bump Standards-Version to 4.5.1 (no change)
+      - Add Testsuite: autopkgtest-pkg-go
+    + Update Maintainer email address to team+pkg-go@tracker.debian.org
+    + Change Section from devel to golang
+    + Change build-dependency on golang-go to golang-any
+    + Update dependencies according to go.mod
+    + Bump debhelper dependency to "Build-Depends: debhelper-compat (= 13)"
+    + Fix package long description
+    + Add myself to the list of Uploaders
+
+ -- Anthony Fok <foka@debian.org>  Sun, 08 Aug 2021 03:55:47 -0600
+
+golang-github-go-openapi-jsonpointer (1:0.0~git20160704.0.46af16f-1) unstable; urgency=medium
+
+  * Package earlier upstream snapshot as B-D for Kubernetes.
+
+ -- Tim Potter <tpot@hpe.com>  Wed, 22 Feb 2017 08:35:31 +1100
+
+golang-github-go-openapi-jsonpointer (0.0~git20161105.0.8d96a2d-1) unstable; urgency=medium
+
+  * Initial release (Closes: #853815)
+
+ -- Tim Potter <tpot@hpe.com>  Tue, 29 Nov 2016 14:49:18 +1100
